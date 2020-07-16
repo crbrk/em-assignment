@@ -185,7 +185,7 @@ class Battle implements \SplSubject
 
         return [
             'calc_result' => ceil($current - $new_dealt),
-            'dealt_after_reduction' => $new_dealt
+            'dealt_after_reduction' => ceil($new_dealt)
         ];
     }
 
