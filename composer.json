@@ -1,0 +1,20 @@
+{
+    "name": "crbk/emag_assignment",
+    "description": "Once upon a time there was a great hero, called Orderus.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "self::me",
+            "email": "c.baranski@protonmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"App\\": "src/"}
+    },
+    "require": {
+        "php": "^7.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
