@@ -184,7 +184,7 @@ class Battle implements \SplSubject
         $new_dealt = $dealt * $final_mod;
 
         return [
-            'calc_result' => round($current - $new_dealt),
+            'calc_result' => ceil($current - $new_dealt),
             'dealt_after_reduction' => $new_dealt
         ];
     }
@@ -229,7 +229,7 @@ class Battle implements \SplSubject
         $proced_skill_names = [];
         foreach($this->getCurrentDefenderSkills() as $skill) {
 
-            if ($skill['type'] = "DAMAGE:APPLY") {
+            if ($skill['type'] === "DAMAGE:APPLY") {
 
                 $random_roll = RandomRollGenerator::rollD100();
                 $skill_proc_rate = $skill['chance'];
